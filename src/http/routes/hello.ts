@@ -1,12 +1,12 @@
 import type { FastifyInstance, HookHandlerDoneFunction } from "fastify";
-import { healthController } from "../controllers/health.ts";
+import { helloController } from "../controllers/hello.ts";
 
 export default function (
   fastify: FastifyInstance,
   _: unknown,
   done: HookHandlerDoneFunction,
 ) {
-  fastify.get("/", {}, healthController);
+  fastify.get("/", {}, helloController);
 
   done();
 }
