@@ -1,6 +1,6 @@
 import type { Controller } from "../Controller.ts";
 
-export const healthController: Controller = async (request, reply) => {
+export const helloController: Controller = async (request, reply) => {
   return reply.send({
     message: "Hello",
   });
