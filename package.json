@@ -7,13 +7,13 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "node --watch src/server.ts",
+    "dev": "node --watch src/main.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "fastify": "^5.8.2"
   },
   "devDependencies": {
     "@types/node": "^25.4.0"
+  },
+  "dependencies": {
+    "fastify": "^5.6.1"
   }
 }
