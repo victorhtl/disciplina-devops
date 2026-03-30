@@ -20,3 +20,7 @@ npm test
 ## CI
 
 Tests run automatically on every push and pull request via GitHub Actions (see [`.github/workflows/ci.yml`](.github/workflows/ci.yml)).
+
+## CD
+
+Deploy happens automatically to [render](https://disciplina-devops.onrender.com). Keep in mind that this is a free account. So it might delay up to 1 minute to have a response on the first request.
