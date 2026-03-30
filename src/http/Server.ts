@@ -14,7 +14,7 @@ export const buildServer = (logger = true) => {
 export const setupServer = () => {
   const server = buildServer();
 
-  server.listen({ port: 3000 }, function (err, _address) {
+  server.listen({ port: 3000, host: "0.0.0.0" }, function (err, _address) {
     if (err) {
       server.log.error(err);
       process.exit(1);
