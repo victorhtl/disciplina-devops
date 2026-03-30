@@ -8,6 +8,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node --watch src/main.ts",
+    "start": "node src/main.js",
     "test": "vitest run"
   },
   "devDependencies": {
