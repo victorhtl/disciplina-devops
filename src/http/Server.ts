@@ -1,12 +1,14 @@
 import Fastify from "fastify";
 import healthRoute from "./routes/health.ts";
 import helloRoute from "./routes/hello.ts";
+import shortenRoute from "./routes/shorten.ts";
 
 export const buildServer = (logger = true) => {
   const server = Fastify({ logger });
 
   server.register(healthRoute);
   server.register(helloRoute);
+  server.register(shortenRoute);
 
   return server;
 };
